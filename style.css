@@ -45,13 +45,22 @@ html, body {
   }
 
   #topBox { 
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end; 
+    padding: 20px 40px;
+    font-size: 24px;
 
   } 
 
   #writ { 
     display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
     flex-wrap: wrap;
-    border: solid;
+    width: 40%; 
+    font-weight: bold; 
+    
   }
   
   @media (max-width: 768px) {
@@ -76,6 +85,7 @@ html, body {
   } 
   #affirm { 
     font-size: 24px;
+    font-weight: bold;
     margin-top: 0;  
   }
   
@@ -97,20 +107,26 @@ html, body {
     margin-right: 20px;
   }
   
-  .form-row label {
-    color: black;
-    font-weight: bolder;
-    opacity: 65%;
-    margin-bottom: -2px;
-  }
   
   .form-row input {
-    border-radius: 9%; 
-    opacity: 20%;
+    border-radius: 9px; 
+    border-color: lightgray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    border-width: 1px;
+    color: black;
     height: 25px;
-    width: 90%;
-  }
-  
+    width: 70%;
+  } 
+
+  input { 
+    color: black; 
+    padding-left: 5px;
+  }  
+  input:focus { 
+    outline-color: blue;
+    outline-width: .5px;
+  }  
   
   .form-row:nth-child(odd) {
     margin-right: 5px;
@@ -118,5 +134,42 @@ html, body {
   
   .form-row label {
     margin-bottom: 1px;
+  } 
+
+  #third { 
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-weight: bold;  
+    padding: 15px 40px;
   }
   
+  #innerThird { 
+   margin-top: 20px; 
+
+
+  }
+  .submit { 
+    border-radius: 10px;
+    width: 14rem;
+    height: 3rem; 
+    color: white;
+    font-family: -Arial, Helvetica, sans-serif;
+    background-color: olive; 
+    border-width: 1px;
+    border-color: white;
+    font-weight: bold;
+    
+  }
+
+  .lbl { 
+    letter-spacing: 2px; 
+    font-weight: bold;
+    margin: 6px;
+  } 
+
+  button:hover{
+    background-color: black;
+    color: white;
+    
+}
